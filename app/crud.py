@@ -124,3 +124,4 @@ def send_verification_email(email: EmailStr, db: Session, background_tasks: Back
     fm = FastMail()
     background_tasks.add_task(fm.send_message, message)
 
+
